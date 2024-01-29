@@ -1,0 +1,198 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap')
+
+:root
+{
+    --green:var(--green);
+    --black:#130f40;
+    --lightcolour:#666;
+    --box-shadow: .6rem 1rem rgba(0,0,0.1);
+    --border:2rem solid rgba(0,0,0.1);
+    --outline:.1rem solid rgba(0,0,0.1);
+    
+}
+*
+{.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+    
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    overflow: auto;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear; 
+}
+html
+{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top:7rem;
+}
+body{
+    background-color: #eee;
+}
+.header
+{
+    border: 0px solid;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right:0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: white;
+    box-shadow: var(--box-shadow); 
+}
+.header .logo
+{
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+.header .logo i
+{
+    color: black;
+}
+
+.header .icons div
+{
+    border: 1px solid;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+    cursor: pointer;
+
+}
+.header .icons div:hover
+{
+    background: #075817;;
+    color: #f9f6f6;;
+}
+ .header .search-form
+{ border: #130f40;
+    border-width: .3rem;
+    background-color: #fefcf8;
+    position: absolute;
+    top: 37%;
+    height: 40%;
+    width: 20%;
+    right:  20rem;
+    border-radius: 2%;
+    align-items: center;
+    
+    overflow: hidden;
+    
+}
+
+.header .search-form input
+{
+
+    background: #fefefe;
+    height: 100%;
+    width: 100%;
+    font-size: 1.78rem;
+    text-transform: none;
+    color: #070000;
+    padding: 0 1.5rem;
+}
+.header .search-form label{
+    font-size: 1rem;
+    padding-right: 1.5rem;
+    cursor: pointer;
+}
+ section
+ {
+    padding: 15rem 9%;
+ }
+ .heading
+ {
+    text-align:center ;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+ }
+ .heading span
+ {
+    background: #1d742e;
+    color: #fefcf8;
+    display: inline block;
+    padding: .5rem 3rem;
+    clip-path: polygon(100% 0%,93% 50%,100% 99%,0% 100%,7% 50%,0% 0%);
+ }
+ .home
+ {
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    background: url(../images/rr.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+ }
+ .home.contents
+ {
+    border: 1rem;
+    text-align:justify;
+    width: 15rem;
+
+ }
+ .home .contents h3
+ {
+    color: #58f379;
+    font-size: 3rem;
+
+ }
+ .home .contents h3 span
+ {
+    color: #a92fc2;
+    text-align: center;
+ }
+ .home .contents p
+ {
+    color: rgb(6, 164, 59);
+    font-size: 2rem;
+    text-align:center;
+ }
+
+ .feature .box-container
+ {
+
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+gap: 1.5rem;
+ }
+ .feature .box-container .box 
+ {
+border:2px solid;
+padding: 3rem 2rem;
+background: #eee;
+outline-offset: -1rem;
+text-align: center;
+box-shadow: #130f40;
+
+ }
+ .feature .box-container .box:hover
+ {
+    box-shadow: 10px 10px 10px 10px rgb(28, 145, 151);
+ }
+ .feature .box-container .box img
+ {
+margin:2rem 0;
+height: 20rem;
+width: 97%;
+
+ }
+ 
